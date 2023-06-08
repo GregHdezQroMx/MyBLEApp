@@ -1,0 +1,8 @@
+Peripheral (Server)
+Central (Device, phone)
+
+establish permissions according android version *
+        request permissions *
+            Check if bluetooth adapter is enabled *
+                enable adaptor *
+                    scan devices

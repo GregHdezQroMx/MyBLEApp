@@ -20,6 +20,10 @@
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
 
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -31,9 +35,8 @@
         android:theme="@style/Theme.MyBLEApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.main.view.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.MyBLEApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
